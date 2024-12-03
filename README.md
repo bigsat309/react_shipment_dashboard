@@ -1,11 +1,41 @@
-# Getting Started with Create React App
+# Test assessment for shipment dashboard for Frontend Engineer Position
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+The goal is to design and implement a dashboard that allows an admin to view and manage shipments associated with specific
+companies. This feature should enable the admin to select a company from a list, view all shipments associated with it, and navigate to a
+detailed view for each shipment. A mock data file in JSON format will be provided to simulate API responses for testing.
 
-In the project directory, you can run:
+## Assessment Requirements
 
+**Shipments List**
+  Description: When a company is selected, a list of shipments linked to that company should appear.
+
+  Functionality: Display essential information for each shipment, such as Shipment ID, Status, Reference etc.
+
+**Shipment Details View**
+  Description: When a specific shipment is selected, navigate to a detailed view of that shipment.
+
+  Functionality: Show all relevant shipment information, such as geolocation and 2 charts with temperature and humidity. This applies only for shipments with IN PROGRESS status.
+
+  Navigation: Ensure smooth navigation back to the shipments list and between other shipments under the same company.
+
+## Used Libraries
+
+  For Chart Temperature and Humidity Chart components, [recharts](https://recharts.org/)library is used.
+
+  For Map Component for Geolocation, [react-leaflet](https://react-leaflet.js.org/)library is used.
+
+  For better CSS styling and clean code productivity, [Tailwindcss](https://www.npmjs.com/package/tailwindcss)v3.4.15 is used.
+
+  For components basic test, [Jest](https://jestjs.io) and [@testing-library/react](https://testing-library.com/docs/react-testing-library) are used.
+
+  For entire codebase of assessment, [TypeScript](https://www.typescriptlang.org/)v4.9.5 is used.
+
+### `npm install`
+
+  Runs above command will install all necessary packages and libraires to your project and will make node_modules directory and package.lock.json file.
+  
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -16,31 +46,15 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In src/tests/ directory, there are test files for each components to test their functionality.
+You can run "npm test" commands to run the test script.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Entry points of this project is src/index.tsx file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Index.tsx file renders the src/App.tsx file in it.
+
+App.tsx file is a Shipment Dashboard so you can start edit from src/App.tsx file.
+
+You can clone this project from this [Git Repo](https://)
