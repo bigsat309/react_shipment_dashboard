@@ -57,4 +57,4 @@ Index.tsx file renders the src/App.tsx file in it.
 
 App.tsx file is a Shipment Dashboard so you can start edit from src/App.tsx file.
 
-You can clone this project from this [Git Repo](https://)
+You can clone this project from this [Git Repo](https://github.com/bigsat309/react_shipment_dashboard/)
